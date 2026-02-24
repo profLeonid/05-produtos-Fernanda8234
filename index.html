@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./main.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Produtos</title>
+</head>
+<body 
+    class="bg-gray-100 flex flex-col items-center justify-center h-screen gap-5">
+    <h1 
+        class="text-2xl">
+        Lista de Produtos
+    </h1>
+    <input 
+        id="produto"
+        type="text" 
+        class="border rounded px-8 py-2">
+    <button 
+        class="bg-blue-500 text-white border rounded px-4 py-2"
+        onclick="adicionarProduto()">
+       Adicionar
+    </button>
+    <div
+        id="lista"
+        class="flex flex-col gap-2">
+    </div>
+</body>
+</html>
