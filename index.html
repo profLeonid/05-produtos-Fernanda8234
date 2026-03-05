@@ -16,15 +16,28 @@
     <input 
         id="produto"
         type="text" 
+        placeholder="Produto" 
+        class="border rounded px-8 py-2">
+    <input 
+        id="codigo"
+        type="text" 
+        placeholder="Codigo"  
+        class="border rounded px-8 py-2">
+    <input 
+        id="quantidade"
+        type="text" 
+        placeholder="Quantidade" 
         class="border rounded px-8 py-2">
     <button 
+        id="btn"
+        type="button"
         class="bg-blue-500 text-white border rounded px-4 py-2"
-        onclick="adicionarProduto()">
+        onclick="resetarLista(), envio()">
        Adicionar
     </button>
     <div
         id="lista"
-        class="flex flex-col gap-2">
+        class="h-64 overflow-y-auto flex flex-col gap-3 pr-2">
     </div>
 </body>
 </html>
