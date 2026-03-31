@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./main.js" defer></script>
+    <script src="./app.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Produtos</title>
 </head>
 <body 
-    class="bg-gray-100 flex flex-col items-center justify-center h-screen gap-5">
+    class="bg-gray-200" >
+    <div class="bg-gray-100 flex flex-col items-center justify-center w-[400px]  h-[750px] mx-auto m-10 gap-5 p-8 rounded-lg shadow">
     <h1 
         class="text-2xl">
         Lista de Produtos
@@ -17,27 +18,44 @@
         id="produto"
         type="text" 
         placeholder="Produto" 
-        class="border rounded px-8 py-2">
+        class="border rounded-[10px] px-8 py-2 ">
     <input 
         id="codigo"
         type="text" 
         placeholder="Codigo"  
-        class="border rounded px-8 py-2">
+        class="border rounded-[10px] px-8 py-2">
     <input 
         id="quantidade"
         type="text" 
         placeholder="Quantidade" 
-        class="border rounded px-8 py-2">
+        class="border rounded-[10px] px-8 py-2">
     <button 
         id="btn"
         type="button"
-        class="bg-blue-500 text-white border rounded px-4 py-2"
-        onclick="resetarLista(), envio()">
+        class="bg-blue-500 text-white border rounded-[10px] px-8 py-2"
+        onclick= "resetarLista(), envio()" >
        Adicionar
     </button>
-    <div
-        id="lista"
-        class="h-64 overflow-y-auto flex flex-col gap-3 pr-2">
+    <div class="bg-blue-500 w-[350px] min-h-[300px] flex flex-col gap-6 p-4 rounded-xl shadow-lg">
+    
+        <div class="bg-white p-3 rounded-lg shadow-sm min-h-[90px]">
+            <h3 class="text-xs font-bold text-gray-400 uppercase mb-2">Produto</h3>
+            <div id="lista" class="flex flex-col gap-1 text-black">
+                </div>
+        </div>
+    
+        <div class="bg-white p-3 rounded-lg shadow-sm min-h-[90px]">
+            <h3 class="text-xs font-bold text-gray-400 uppercase mb-2">Código</h3>
+            <div id="lista2" class="flex flex-col gap-1 text-black">
+                </div>
+        </div>
+    
+        <div class="bg-white p-3 rounded-lg shadow-sm min-h-[90px]">
+            <h3 class="text-xs font-bold text-gray-400 uppercase mb-2">Quantidade</h3>
+            <div id="lista3" class="flex flex-col gap-1 text-black">
+                </div>
+        </div>
     </div>
+</div>
 </body>
 </html>
